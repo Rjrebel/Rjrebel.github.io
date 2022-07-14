@@ -1,0 +1,43 @@
+#log-in-page {
+    display : flex;
+    height : 100vh;
+    justify-content : center ;
+    align-items : center ;
+    background-image: linear-gradient(red, yellow);
+}
+
+#log-in-page .form {
+    display : flex;
+    flex-direction : column;
+}
+
+#data {
+    display : flex;
+    height : 100vh;
+    width : 100%;
+    flex-direction : column;
+    justify-content : center ;
+    align-items : center ;
+    background-image: linear-gradient(red, yellow);
+}
+
+#number-container {
+    height : 50px;
+    width : 80px;
+}
+
+.submit {
+    height : 50px;
+    width : 80px;
+    border-radius : 10px;
+}
+
+#result-data {
+    display : flex;
+    height : 100vh;
+    flex-direction : column;
+    justify-content : center ;
+    align-items : center ;
+    background-image: linear-gradient(red, yellow);
+}
+

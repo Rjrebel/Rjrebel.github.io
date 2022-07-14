@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess It</title>
+</head>
+
+<body>
+    <section id="log-in-page">
+        <div class="form">
+            <h1>Guess the number between 1 to 100</h1>
+            <form>
+                <input id="fName" required type="text" placeholder="Enter Your First name">
+                <button id="start-btn">Start the game</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="game-section" style="display: none;">
+        <div id="data">
+            <h1>
+                Guess the number Between 1 to 100.
+            </h1>
+            <form action="">
+                <input id="number-container" type="number" min="0" max="100"><br><br><br>
+                <button class="submit">Submit</button>
+            </form>
+            <br>
+            <br>
+            <h3 id="result" style="display: none;">Your guess the wrong number, try larger.</h3>
+        </div>
+    </section>
+
+    <section id="result-section" style="display: none;">
+        <div id="result-data">
+            <h1>Congratulations !!! You won the game.</h1>
+            <h1 id="msg">You took 6 chances to win the game</h1>
+            <br>
+            <br>
+            <br>
+            <a href=""> <button>Play Again</button></a>
+        </div>
+    </section>
+
+</body>
+<script src="script.js"></script>
+
+</html>

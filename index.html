@@ -12,37 +12,49 @@
 <body>
     <section id="log-in-page">
         <div class="form">
-            <h1>Guess the number between 1 to 100</h1>
-            <form>
-                <input id="fName" required type="text" placeholder="Enter Your First name">
-                <button id="start-btn">Start the game</button>
-            </form>
+            <div class="glass">
+                <h1>Guess the number between 0 and 100</h1>
+                <form class="log-in-data">
+                    <input id="fName" type="text" placeholder="Enter Your Name">
+                    <button id="button">Let's Start</button>
+                </form>
+            </div>
         </div>
     </section>
 
     <section id="game-section" style="display: none;">
         <div id="data">
-            <h1>
-                Guess the number Between 1 to 100.
-            </h1>
-            <form action="">
-                <input id="number-container" type="number" min="0" max="100"><br><br><br>
-                <button class="submit">Submit</button>
-            </form>
-            <br>
-            <br>
-            <h3 id="result" style="display: none;">Your guess the wrong number, try larger.</h3>
+            <div class="glass-game">
+                <h1 class="game-section-heading">
+                    Guess the number Between 0 to 100.
+                </h1>
+
+                <h3 id="last-guess"></h3>
+                <p id="result" style="display: none;">You guess the wrong number, try larger.</p>
+                <form action="">
+                    <input id="number-container" value="" type="number"><br><br><br>
+                    <button class="submit">Submit</button>
+                </form>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <a href=""><button class="play-again">Go to Homepage</button></a>
+            </div>
         </div>
     </section>
 
     <section id="result-section" style="display: none;">
         <div id="result-data">
-            <h1>Congratulations !!! You won the game.</h1>
-            <h1 id="msg">You took 6 chances to win the game</h1>
-            <br>
-            <br>
-            <br>
-            <a href=""> <button>Play Again</button></a>
+            <div class="glass-game">
+                <h1 class="result-section-heading">Congratulations !!! You won the game.</h1>
+                <h1 class="result-section-heading" id="msg"></h1>
+                <a href=""><button style="margin-left: 50px;" class="play-again">Play Again</button></a>
+            </div>
         </div>
     </section>
 
